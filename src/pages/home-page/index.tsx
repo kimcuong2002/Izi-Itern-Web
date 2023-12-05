@@ -8,10 +8,11 @@ import { PRODUCT_DATA } from "./constants";
 import HomeServiceItem from "./components/homeserviceitem";
 import sale from "../../assets/images/sale-highlight-bg-banner.png";
 import LatestProduct from "./components/latest-product";
+import Testimonials from "./components/testimonials";
 
 const Home = () => {
   return (
-    <Box>
+    <>
       <Banner
         thumb={sofabanner}
         bannerBigTitle="style comfort& affordable"
@@ -58,11 +59,12 @@ const Home = () => {
         thumb={sale}
         bannerBigTitle="sale!"
         bannerSmallTitle="10% Off On All Products!"
-        buttonName="shop now"
+        buttonName="Shop Now"
         className="bg-gray-200"
       />
       <LatestProduct />
-    </Box>
+      <Testimonials />
+    </>
   );
 };
 
